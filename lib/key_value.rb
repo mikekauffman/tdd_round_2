@@ -12,5 +12,9 @@ class KeyValue
     @bank[key]
 
   end
+  def delete(key)
+    @bank.delete(key)
+
+  end
 
 end
