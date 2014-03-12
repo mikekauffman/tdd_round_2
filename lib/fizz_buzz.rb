@@ -12,7 +12,9 @@ class FizzBuzz
       if (is_multiple_of?(3, first_array[i]))
         first_array[i] = "fizz"
       end
-
+      if (is_multiple_of?(5, first_array[i]))
+        first_array[i] = "buzz"
+      end
       i += 1
     end
 
