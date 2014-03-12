@@ -27,4 +27,13 @@ describe "keyvalue" do
   expect(actual).to eq expected
   end
 
+  it "program can show a list of all keys in a store" do
+  key_bank = KeyValue.new
+  key_bank.add("mike", 25)
+  key_bank.add("jim", 20)
+  key_bank.add("george", 15)
+  expected = ["mike", "jim", "george"]
+  actual = key_bank.list
+  expect(actual).to eq expected
+  end
 end

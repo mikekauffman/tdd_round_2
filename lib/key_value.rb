@@ -16,5 +16,11 @@ class KeyValue
     @bank.delete(key)
 
   end
-
+  def list
+    key_list = Array.new
+    @bank.each do |x,y|
+    key_list << x
+    end
+    key_list
+  end
 end
