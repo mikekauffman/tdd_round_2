@@ -36,4 +36,13 @@ describe "keyvalue" do
   actual = key_bank.list
   expect(actual).to eq expected
   end
+
+  it "program can delete all keys from a store" do
+    key_bank = KeyValue.new
+    key_bank.add("mike", 25)
+    key_bank.add("jim", 20)
+    key_bank.add("george", 15)
+    expected = {}
+    actual = key_bank.erase
+    expect(actual).to eq expected  end
 end

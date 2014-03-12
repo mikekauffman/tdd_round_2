@@ -23,4 +23,9 @@ class KeyValue
     end
     key_list
   end
+  def erase
+    @bank.each do |x,y|
+    @bank.delete(x)
+    end
+  end
 end
