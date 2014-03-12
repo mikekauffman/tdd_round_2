@@ -9,6 +9,9 @@ class FizzBuzz
 
     while (i < first_array.length)
 
+      if (is_multiple_of?(3, first_array[i])) && (is_multiple_of?(5, first_array[i]))
+        first_array[i] = "fizzbuzz"
+      end
       if (is_multiple_of?(3, first_array[i]))
         first_array[i] = "fizz"
       end
