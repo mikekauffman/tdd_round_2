@@ -9,6 +9,9 @@ class FizzBuzz
       if (is_multiple_of?(3, numbers[i]))
         numbers[i] = 'fizz'
       end
+      if (is_multiple_of?(5, numbers[i]))
+        numbers[i] = 'buzz'
+      end
       i += 1
     end
 
