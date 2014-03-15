@@ -3,9 +3,9 @@ require 'fizz_buzz'
 
 describe FizzBuzz do
 
-  it "takes an initialized number and returns an array from 1 to that number" do
-    numbers = FizzBuzz.new(10)
-    expected = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  it "replaces multiples of 3 with 'fizz' in the array" do
+    numbers = FizzBuzz.new(7)
+    expected = [1, 2, 'fizz', 4, 5, 'fizz', 7]
     actual = numbers.array
     expect(actual).to eq expected
   end
