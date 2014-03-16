@@ -6,6 +6,9 @@ class FizzBuzz
     numbers = 1.upto(@number).to_a
     i = 0
     while i < numbers.length
+      if (is_multiple_of?(3, numbers[i])) && (is_multiple_of?(5, numbers[i]))
+        numbers[i] = 'fizzbuzz'
+      end
       if (is_multiple_of?(3, numbers[i]))
         numbers[i] = 'fizz'
       end
