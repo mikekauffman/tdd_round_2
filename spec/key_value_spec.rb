@@ -26,4 +26,13 @@ describe "KeyValue" do
   actual = store.list
   expect(actual).to eq expected
   end
+  it "allows for the deletion of all keys" do
+  store = KeyValue.new
+  store.add('mike', 1000)
+  store.add('jim', 1500)
+  store.add('brit', 500)
+  expected = {}
+  actual = store.clear
+  expect(actual).to eq expected
+  end
 end

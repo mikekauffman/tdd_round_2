@@ -18,4 +18,7 @@ class KeyValue
     end
   list
   end
+  def clear
+    @store.clear
+  end
 end
